@@ -28,9 +28,9 @@ kuro_database.commit()
 # mustrar no terminal minha tabela
 
 # mais um teste tudo certo até aqui
-id_cliente = cursor.execute('select id_cliente from clientes')
+"""id_cliente = cursor.execute('select id_cliente from clientes')
 id_cliente = id_cliente.fetchall()
 for i in range(len(id_cliente)):
     cliente = str(id_cliente[i])
     #id_cliente = int(id_cliente[2:len(id_cliente)-3])
-    print(cliente[1:2])
+    print(cliente[1:2])"""
