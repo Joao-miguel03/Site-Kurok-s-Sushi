@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Restaurante Kuro's</title>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/cs/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
+        <style>
+            header{
+    background-image: url("{{url_for('static',filename='img/cabecalho.png')}}");
+    background-size: cover; /* Garante que a imagem cubra todo o rodapé */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh;
+    border: none;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="content">
+                <a href="/login"> <button class="btn-login"> 
+                    <img id="login" src="{{url_for('static', filename='img/bt_login.png')}}"> </button>
+                </a>
+                <button class="btn-confg"> <img id="confg" src="{{url_for('static', filename='img/bt_confg.png')}}"></button>
+            </div>
+        </header>
+
+        <footer>
+            
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
