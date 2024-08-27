@@ -1,0 +1,130 @@
+body{
+    background-color: rgb(192, 0, 0);
+}
+
+
+/* .content{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
+    text-align: center; /* Centraliza o conteúdo dentro do rodapé 
+    padding: 10px;
+    width: 100%;
+}
+*/
+#cabecalho{
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;   
+}    
+#rodape{
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;   
+}    
+h2{
+    color: #FCFAF9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#bt_home{
+    margin-right: 10px;
+    margin-left: 1200px;   
+    max-width: 1700px; 
+    border: none;
+    background-color: rgb(192, 0, 0);
+}
+#bt_duvidas{
+    margin-right: 10px;
+    border: none;
+    background-color: rgb(192, 0, 0);
+}
+main{
+    height: 100vh;
+}
+.logo{
+    justify-content: left;
+    display: flex;
+    border: none;
+    margin-left: 0;  
+    height: 300px; 
+    width: 50px;
+}
+#sushi{
+    justify-content: right;
+    display: flex;
+    border: none;
+    height: 500px; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 160px;   
+    max-width: 1700px; 
+}
+.btn-login{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    position: absolute;
+    top: 11px; 
+    left: 1170px;
+    padding: 50px 50px; 
+    background-color: #193C6C;
+    border: none; 
+    border-radius: 100px; 
+    cursor: pointer; 
+    height: 5px; 
+    width: 5px; 
+    align-items: center;
+    text-align: center;
+}
+#login{
+    text-align: center;
+    height: 70px; 
+    width: 110px; 
+}
+
+.btn-confg{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    position:absolute;
+    top: 10px; 
+    left: 1100px;
+    padding: 50px 50px; 
+    border: none;
+    background-color: #193C6C;
+    border-radius: 100px; 
+    cursor: pointer; 
+    height: 5px; 
+    width: 5px; 
+    align-items:center;
+}
+#confg{ 
+    height: 65px; 
+    width: 100px; 
+}
+
+#conteudo{
+    background-color:#FCFAF9;
+    border-radius: 20px;
+    padding: 100px 150px;
+    position: relative;
+   }
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+}   
