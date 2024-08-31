@@ -1,0 +1,24 @@
+<form action="{{url_for('cardapio.edit', id = datas[0])}}" method="POST">
+
+    <div class="mb-3">
+      <label class="form-label">Nome da Comida</label>
+      <input type="text" name="nome" required class="form-control" value="{{datas[1]}}">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Preço</label>
+      <input type="float" required class="form-control" name="preco" value="{{datas[2]}}">
+    </div>
+    
+    <div class="mb-3">
+      <label class="form-label">Estrelas</label>
+      <input type="text" required class="form-control" name="estrelas" value="{{datas[3]}}">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Descrição</label>
+      <input type="text" required class="form-control" name="descricao" value="{{datas[4]}}">
+    </div>
+
+    <input type="submit" value="Confirmar" class="btn btn-primary">
+</form>
