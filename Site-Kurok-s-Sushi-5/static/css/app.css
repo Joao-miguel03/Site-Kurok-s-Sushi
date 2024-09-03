@@ -1,8 +1,6 @@
 body{
     background-color: rgb(192, 0, 0);
 }
-
-
 /* .content{ 
     display: flex;
     justify-content: space-around;
@@ -94,7 +92,6 @@ main{
     height: 70px; 
     width: 110px; 
 }
-
 .btn-confg{
     display: flex;
     justify-content: center;
@@ -115,7 +112,6 @@ main{
     height: 65px; 
     width: 100px; 
 }
-
 #conteudo{
     background-color:#FCFAF9;
     border-radius: 20px;
