@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/adm.css')}}">
+</head>
+<body>
+    
+    <div class="conteiner">
+        <a href="{{url_for('cardapio.cardapio', id_pessoa = id_pessoa)}}">
+        Cardapio
+        </a> <br><br><br><br>
+        <a href="{{url_for('cliente.carteira', id = id_pessoa)}}">
+        Carteira
+        </a>
+    </div>
+</body>
+</html>
+
+
+

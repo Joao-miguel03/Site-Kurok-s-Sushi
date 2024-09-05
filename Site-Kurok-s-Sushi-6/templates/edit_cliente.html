@@ -1,0 +1,18 @@
+<form action="{{url_for('cliente.edit', id = datas[0])}}" method="POST">
+
+    <div class="mb-3">
+      <label class="form-label">Nome</label>
+      <input type="text" name="nome" required class="form-control" value="{{datas[1]}}">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="email" required class="form-control" name="email" value="{{datas[2]}}">
+    </div>
+    
+    <div class="mb-3">
+      <label class="form-label">Senha</label>
+      <input type="text" required class="form-control" name="senha" value="{{datas[3]}}">
+    </div>
+    <input type="submit" value="Confirmar" class="btn btn-primary">
+</form>

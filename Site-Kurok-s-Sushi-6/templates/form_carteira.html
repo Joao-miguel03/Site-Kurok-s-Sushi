@@ -1,0 +1,24 @@
+<form action="{{url_for('cliente.form_carteira', id = id)}}" method="POST">
+
+    <div class="mb-3">
+      <label class="form-label">Número do cartão</label>
+      <input type="int" class="form-control" name="n_cartao">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Senha do cartão</label>
+      <input type="int" class="form-control" name="senha_cartao">
+    </div>
+    
+    <div class="mb-3">
+      <label class="form-label">Cpf</label>
+      <input type="text" class="form-control" name="cpf">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Saldo</label>
+      <input type="float" class="form-control" name="saldo">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Adicionar Cliente</button>
+</form>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/cardapio.css')}}">
+</head>
+<body>
+    <div class="conteiner">
+        
+        {% for item in cardapio %}
+
+        <a href="{{url_for('cardapio.item_cardapio',id_pessoa = id_pessoa, id_item = item[0])}}">
+            <div>
+                {{item[1]}}
+                <br>
+                ESTRELAS: {{item[3]}}
+            </div>
+        </a>
+
+        {% endfor %}
+
+    </div>
+</body>
+</html>
+
+
+

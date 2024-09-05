@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(192, 0, 0);
+    margin: 0;
+    padding: 0;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FCFAF9;
+    align-items:center;
+    border-radius: 20px;
+    padding: 150px 50px;
+    text-align: center;
+    height: 30vh;
+    width: 80vh;
+}
+
+.item_cardapio{
+    color: rgb(33, 3, 3);
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;  
+}
+
+a{
+    color: rgb(185, 15, 15);
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 35px;
+}
+a:hover{
+    color: rgb(104, 12, 12);
+}

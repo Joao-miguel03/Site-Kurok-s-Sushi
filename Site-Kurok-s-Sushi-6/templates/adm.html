@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/adm.css')}}">
+</head>
+<body>
+    <div class="conteiner">
+        <a href="{{url_for('cliente.listar')}}">
+        crud cliente
+        </a> <br><br><br><br>
+        <a href="{{url_for('cardapio.listar')}}">
+        crud cardapio
+        </a> <br><br><br><br>
+        <a href="{{url_for('carteira.listar')}}">
+        crud carteira
+        </a>
+    </div>
+</body>
+</html>
+
+
+
