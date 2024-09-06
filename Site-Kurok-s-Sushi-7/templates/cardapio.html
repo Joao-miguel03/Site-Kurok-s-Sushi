@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/menu.css')}}">
+    <style>
+        body{
+            background-color: rgb(192, 0, 0);
+            width: 100%;
+            overflow-x: auto; 
+          
+        }
+        .conteudo-largo {
+            width: auto;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .content{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <img id="cabecalho" src="{{url_for('static', filename='img/cabecalho.png')}}"><br>
+
+            <a href="{{url_for('home.adm')}}"> 
+                 <button class="btn-confg"> <img id="confg" src="{{url_for('static', filename='img/bt_confg.png')}}"></button>
+             </a>
+            <a href="/login"> <button class="btn-login"> 
+                <img id="login" src="{{url_for('static', filename='img/bt_login.png')}}"> </button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+    <img id="logo2" src="{{url_for('static', filename='img/logo2.png')}}"></img>
+              
+   
+    <div class="conteudo-largo">
+        <img id="sashimi" src="{{url_for('static', filename='img/sashimi.png')}}"><br>
+        <div class="conteiner">
+        {% for item in cardapio %}
+        <a href="{{url_for('cardapio.item_cardapio',id_pessoa = id_pessoa, id_item = item[0])}}">
+            <div>
+                {{item[1]}}
+                <br>
+                ESTRELAS: {{item[3]}}
+            </div>
+        </a>
+
+        {% endfor %}
+        </div>
+    </div>
+
+  
+    </main>
+</body>
+</html>
+
+
+

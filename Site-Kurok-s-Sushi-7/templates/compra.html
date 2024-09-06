@@ -1,0 +1,39 @@
+<head>
+  <style>
+    body{
+      background-color: rgb(192, 0, 0);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+       margin-top: 60px;
+    }
+    label{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: antiquewhite;
+      font-size: 40px;
+    }
+    form{
+      width: 950px;
+      border: dotted 10px antiquewhite;
+      padding: 40px 40px;
+      border-radius: 20px;
+    }
+    button{
+      background-color: brown;
+      border-radius: 20px;
+      border: solid rgb(102, 15, 15) 2px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<form action="{{url_for('cardapio.comprar', id_pessoa = id_pessoa, id_item = id_item)}}" method="POST">
+    
+    <div class="mb-3">
+      <label class="form-label">Quantidade de itens:</label><br><br>
+      <input type="int" class="form-control" name="qtd">
+    </div><br>
+
+    <button type="submit" class="btn btn-primary">Comprar</button>
+</form>

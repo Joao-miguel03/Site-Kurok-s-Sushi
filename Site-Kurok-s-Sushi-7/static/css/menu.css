@@ -1,0 +1,84 @@
+.content{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#logo2{
+    margin-top: 20px;
+    height: 150px;
+    width: 230px;
+}
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#bt_cardapio{
+   width: 350px;
+  height: auto;
+  margin-right: 15px;
+}
+#bt_carteira{
+    width: 350px;
+   height: auto;
+ }
+a{
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cabecalho{
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 100%;
+    margin: 0;   
+}  
+.btn-login{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    position: absolute;
+    top: 16px; 
+    left: 1300px;
+    padding: 50px 50px; 
+    background-color: #193C6C;
+    border: none; 
+    border-radius: 100px; 
+    cursor: pointer; 
+    height: 5px; 
+    width: 5px; 
+    align-items: center;
+    text-align: center;
+}
+#login{
+    text-align: center;
+    height: 70px; 
+    width: 110px; 
+}
+.btn-confg{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    position:absolute;
+    top: 10px; 
+    left: 1200px;
+    padding: 50px 50px; 
+    border: none;
+    background-color: #193C6C;
+    border-radius: 100px; 
+    cursor: pointer; 
+    height: 5px; 
+    width: 5px; 
+    align-items:center;
+}
+#confg{ 
+    height: 65px; 
+    width: 100px; 
+}  
+

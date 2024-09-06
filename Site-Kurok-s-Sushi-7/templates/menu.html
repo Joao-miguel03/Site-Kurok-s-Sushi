@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/menu.css')}}">
+    <style>
+        body{
+            color: rgb(255, 255, 255);    
+            background-image: url("{{url_for('static', filename = 'img/decoracao.png')}}");
+            height: 100vh;
+            width: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <img id="cabecalho" src="{{url_for('static', filename='img/cabecalho.png')}}">
+            <a href="{{url_for('home.adm')}}"> 
+                 <button class="btn-confg"> <img id="confg" src="{{url_for('static', filename='img/bt_confg.png')}}"></button>
+             </a>
+            <a href="/login"> <button class="btn-login"> 
+                <img id="login" src="{{url_for('static', filename='img/bt_login.png')}}"> </button>
+            </a>
+        </div>
+    </header>
+    <main>
+    <img id="logo2" src="{{url_for('static', filename='img/logo2.png')}}"></img>
+
+    <div class="conteiner">
+        <a href="{{url_for('cardapio.cardapio', id_pessoa = id_pessoa)}}">
+          <img id="bt_cardapio" src="{{url_for('static', filename='img/bt_cardapio.png')}}"></img>
+        </a> 
+        <a href="{{url_for('cliente.carteira', id = id_pessoa)}}">
+            <img id="bt_carteira" src="{{url_for('static', filename='img/bt_carteira.png')}}"></img>
+        </a>
+    </div>
+    </main>
+</body>
+</html>
+
+
+

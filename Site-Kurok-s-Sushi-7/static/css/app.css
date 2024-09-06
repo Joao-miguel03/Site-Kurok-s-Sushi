@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(192, 0, 0);
+}
+.content{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+a{
+    color: rgb(255, 255, 255);
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cabecalho{
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 100%;
+    margin: 0;   
+}    
+
+h2{
+    color: #FCFAF9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bt_menu{
+    margin-left: 850px;   
+    max-width: 1700px; 
+    border: none;
+    background-color: rgb(192, 0, 0);
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: inline;
+}
+.logo{
+    display: flex;
+    border: none;
+    margin-top: 70px;
+    margin-left: -1100px;  
+    height: 300px; 
+    width: 50px;
+}
+#sushi{
+    justify-content: right;
+    display: flex;
+    border: none;
+    height: 500px; 
+    margin-top: 50px;
+    margin-left: 250px; 
+}
+.btn-login{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    position: absolute;
+    top: 16px; 
+    left: 1300px;
+    padding: 50px 50px; 
+    background-color: #193C6C;
+    border: none; 
+    border-radius: 100px; 
+    cursor: pointer; 
+    height: 5px; 
+    width: 5px; 
+    align-items: center;
+    text-align: center;
+}
+#login{
+    text-align: center;
+    height: 70px; 
+    width: 110px; 
+}
+.btn-confg{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    position:absolute;
+    top: 10px; 
+    left: 1200px;
+    padding: 50px 50px; 
+    border: none;
+    background-color: #193C6C;
+    border-radius: 100px; 
+    cursor: pointer; 
+    height: 5px; 
+    width: 5px; 
+    align-items:center;
+}
+#confg{ 
+    height: 65px; 
+    width: 100px; 
+}
+#nome_usu{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 182, 182);
+    white-space: nowrap; 
+    
+}
+.nome{
+    color: rgb(255, 182, 182);
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    white-space: nowrap; 
+}
+ 

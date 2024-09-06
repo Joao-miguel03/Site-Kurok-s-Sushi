@@ -1,0 +1,24 @@
+<form action="{{url_for('cardapio.form_cardapio')}}" method="POST">
+
+    <div class="mb-3">
+      <label class="form-label">Nome da Comida</label>
+      <input type="text" class="form-control" name="nome">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Preço</label>
+        <input type="text" class="form-control" name="preco">
+      </div>
+
+    <div class="mb-3">
+      <label class="form-label">Estrelas</label>
+      <input type="text" class="form-control" name="estrelas">
+    </div>
+    
+    <div class="mb-3">
+      <label class="form-label">Descrição</label>
+      <input type="text" class="form-control" name="descricao">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Adicionar Comida</button>
+</form>

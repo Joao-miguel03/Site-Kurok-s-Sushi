@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Restaurante Kuro's</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/cs/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            body{
+    background-color: rgb(192, 0, 0);
+}
+#cabecalho{
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 100%;
+    margin: 0;   
+}  
+.btn-login{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    position: absolute;
+    top: 16px; 
+    left: 1300px;
+    padding: 50px 50px; 
+    background-color: #193C6C;
+    border: none; 
+    border-radius: 100px; 
+    cursor: pointer; 
+    height: 5px; 
+    width: 5px; 
+    align-items: center;
+    text-align: center;
+}
+#login{
+    text-align: center;
+    height: 70px; 
+    width: 110px; 
+}
+.btn-confg{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    position:absolute;
+    top: 10px; 
+    left: 1200px;
+    padding: 50px 50px; 
+    border: none;
+    background-color: #193C6C;
+    border-radius: 100px; 
+    cursor: pointer; 
+    height: 5px; 
+    width: 5px; 
+    align-items:center;
+}
+#confg{ 
+    height: 65px; 
+    width: 100px; 
+}  
+.logo{
+    display: flex;
+    border: none;
+    margin-top: 65px;
+    margin-left: -1150px;  
+    height: 300px; 
+    width: 50px;
+}
+#sushi{
+    justify-content: right;
+    display: flex;
+    border: none;
+    height: 500px; 
+    margin-top: 50px;
+    margin-left: 300px; 
+}
+#nome_usu{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 182, 182);
+    white-space: nowrap; 
+}
+.nome{
+    color: rgb(255, 182, 182);
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+    margin-top: 20px;
+    white-space: nowrap; 
+}
+a{
+    color: rgb(255, 255, 255);
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.bt_menu{
+    margin-left: 850px;   
+    max-width: 1700px; 
+    border: none;
+    background-color: rgb(192, 0, 0);
+}
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="content">
+                <img id="cabecalho" src="{{url_for('static', filename='img/cabecalho.png')}}">
+                <a href="{{url_for('home.adm')}}"> 
+                     <button class="btn-confg"> <img id="confg" src="{{url_for('static', filename='img/bt_confg.png')}}"></button>
+                 </a>
+                <a href="/login"> <button class="btn-login"> 
+                    <img id="login" src="{{url_for('static', filename='img/bt_login.png')}}"> </button>
+                </a>
+            </div>
+        </header>
+       
+        <main>
+            <h1 id="nome_usu">Bem vindo(a)</h1>
+            <div class="nome">
+                {% if logado == True %}
+                    {{pessoa[1]}}
+                {% endif %}
+            </div>
+
+            {% if logado == True %}
+                <a href="{{url_for('home.menu', id = pessoa[0])}}" class="bt_menu"> <h2>Menu</h2> </a>
+            {% endif %}
+
+            
+        <div class="logo">
+            <img src="{{url_for('static', filename='img/logo.png')}}">
+            <img id="sushi" src="{{url_for('static', filename='img/sushi.png')}}">
+        </div>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
